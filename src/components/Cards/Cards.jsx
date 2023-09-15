@@ -3,7 +3,7 @@ import Card  from '../Card/Card';
 import { useEffect, useState } from 'react';
 
 
-const Cards = () => {
+const Cards = ({handleAddToCarts}) => {
 
     const [cardData, setCardData] = useState([])
 
@@ -15,9 +15,9 @@ const Cards = () => {
 
     return (
         
-            <div className='flex-1 grid grid-cols-1 md: grid-cols-2 lg:grid-cols-3  gap-4'>
+            <div className='flex-1 grid grid-cols-1 md: grid-cols-2 lg:grid-cols-3  gap-6'>
                 {
-                    cardData.map(card => <Card key={card.id} card={card}></Card>)
+                    cardData.map(card => <Card key={card.id} card={card} handleAddToCarts={handleAddToCarts}></Card>)
                 }
 
             </div>
@@ -26,7 +26,7 @@ const Cards = () => {
 };
 
 Cards.propTypes = {
-    
+    handleAddToCarts: PropTypes.func.isRequired
 };
 
 export default Cards;

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { FiDollarSign, FiBookOpen } from 'react-icons/Fi';
-const Card = ({ card }) => {
+const Card = ({ card, handleAddToCarts }) => {
     const { image, title, description, price, credit } = card;
 
     return (
@@ -18,8 +18,8 @@ const Card = ({ card }) => {
                             <FiBookOpen className='text-xl'></FiBookOpen>
                             <p className='text-slate-400'>Credit: {credit} hr</p>
                         </div>
-                        <div className='card-actions'>
-                            <button className='py-2 rounded-lg font-semibold text-white bg-[#2F80ED] w-full'>Select</button>
+                        <div className='card-actions'> 
+                            <button className='py-2 rounded-lg font-semibold text-white bg-[#2F80ED] w-full'  onClick={() => handleAddToCarts(card)}>Select</button>
                         </div>
                     </div>
 
@@ -31,6 +31,7 @@ const Card = ({ card }) => {
 
 Card.propTypes = {
     card: PropTypes.object.isRequired,
+    handleAddToCarts: PropTypes.func.isRequired
 
 };
 
