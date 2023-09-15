@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import './App.css'
+import Header from './components/Header/Header' 
+import Cards from './components/Cards/Cards'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [Carts, setCarts] = useState([])
 
   return (
     <>
-      
-      <h3 className='text-5xl font-bold text-center mt-10'>Course Registration</h3>
-      
+      <Header></Header>
+      <Cards></Cards>
+     
     </>
   )
 }
