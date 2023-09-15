@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/WG1P7QL/Rectangle-2.png",
+    "title": "Introduction to C Programming",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price": 10000,
+    "credit": "1hr"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/R9rYY7q/Rectangle-2-1.png",
+    "title": "Introduction to Algorithms",
+    "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price": 25000,
+    "credit": "2hr"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/Fhv7NwP/Rectangle-2-2.png",
+    "title": "Introduction to C++ for DSA",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "price": 15000,
+    "credit": "10hr"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/4W18pPv/Rectangle-2-3.png",
+    "title": "Basic Data Structures",
+    "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "price": 8000,
+    "credit": "5hr"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/6XXwP99/Rectangle-2-4.png",
+    "title": "Introduction to OOP Python",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "price": 17000,
+    "credit": "5hr"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/BjxSPhB/Rectangle-2-5.png",
+    "title": "Software Engineering",
+    "description": "Suspendisse potenti. In eleifend quam id odio eleifend, vel euismod purus tempus.",
+    "price": 21000,
+    "credit": "10hr"
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/fDCd8vN/Rectangle-2-6.png",
+    "title": "AWS, Cloud Computing",
+    "description": "Phasellus at consectetur erat. Proin a felis non erat tincidunt volutpat.",
+    "price": 12000,
+    "credit": "6hr"
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/27XyGrK/Rectangle-3.png",
+    "title": "Database (MySQL)",
+    "description": "Vestibulum euismod, felis nec ullamcorper gravida, augue odio hendrerit nunc, in hendrerit ligula libero a dolor.",
+    "price": 35000,
+    "credit": "8hr"
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/cD0F5hv/Rectangle-3-1.pngg",
+    "title": "Problem-Solving Part",
+    "description": "Fusce interdum quam non velit condimentum ultrices.",
+    "price": 19000,
+    "credit": "3hr"
+  }
+]
