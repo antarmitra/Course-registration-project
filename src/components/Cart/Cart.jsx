@@ -4,7 +4,7 @@ const cart = ({cart, idx}) => {
     const {title} = cart
     return (
         <div>
-            <h2 className='text-lg'>{idx + 1}. {title}</h2>
+            <p className='text-lg'>{idx + 1}. {title}</p>
         </div>
     );
 };

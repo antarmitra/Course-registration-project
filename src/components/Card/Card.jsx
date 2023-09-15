@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import { FiDollarSign, FiBookOpen } from 'react-icons/Fi';
-const Card = ({ card, handleAddToCarts }) => {
+const Card = ({ card, handleAddToCarts}) => {
     const { image, title, description, price, credit } = card;
+    console.log(card);
 
     return (
         <div>
@@ -13,13 +14,13 @@ const Card = ({ card, handleAddToCarts }) => {
                         <p className='text-slate-400'>{description}</p>
                         <div className='flex space-x-2 text-lg items-center'>
                             <FiDollarSign className='text-xl'></FiDollarSign>
-                            <p className='text-slate-400'>Price: {price}</p>
+                            <p className='text-slate-400 text-base'>Price: {price}</p>
 
                             <FiBookOpen className='text-xl'></FiBookOpen>
-                            <p className='text-slate-400'>Credit: {credit} hr</p>
+                            <p className='text-slate-400 text-base'>Credit: {credit} hr</p>
                         </div>
                         <div className='card-actions'> 
-                            <button className='py-2 rounded-lg font-semibold text-white bg-[#2F80ED] w-full'  onClick={() => handleAddToCarts(card)}>Select</button>
+                            <button className='py-2 rounded-lg font-semibold text-white bg-[#2F80ED] w-full' onClick={ () =>handleAddToCarts(card)}>Select</button>
                         </div>
                     </div>
 
