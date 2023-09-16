@@ -8,7 +8,7 @@ const Card = ({ card, handleAddToCarts}) => {
         <div>
             <div className='mt-10'>
                 <div className='card bg-base-100 shadow-xl h-[450px]'>
-                    <figure><img className='w-full px-4 ' src={image} alt="" /></figure>
+                    <figure><img className='w-full px-2 ' src={image} alt="" /></figure>
                     <div className='card-body space-y-2 px-4'>
                         <h2 className='card-title text-xl font-bold'>{title}</h2>
                         <p className='text-slate-400'>{description}</p>

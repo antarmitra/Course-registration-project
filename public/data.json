@@ -34,7 +34,7 @@
   {
     "id": 5,
     "image": "https://i.ibb.co/6XXwP99/Rectangle-2-4.png",
-    "title": "Problem-Solving Part",
+    "title": "Introduction to C++ for DSA",
     "description": "Enhance your problem-solving skills with real-world challenges and exercises.",
     "price": 17000,
     "credit": 5
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "image": "https://i.ibb.co/fDCd8vN/Rectangle-2-6.png",
-    "title": "AWS, Cloud Computing",
+    "title": "Problem-Solving Part",
     "description": "Explore Amazon Web Services and cloud computing in this hands-on course.",
     "price": 12000,
     "credit": 6

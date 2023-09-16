@@ -1,11 +1,12 @@
 /* eslint-disable no-undef */
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import './App.css'
 import Header from './components/Header/Header'
 import Cards from './components/Cards/Cards';
 import Carts from './components/Carts/Carts';
 import { useState } from 'react';
-
-
 
 function App() {
 
@@ -14,16 +15,15 @@ function App() {
   const [totalCredit, setTotalCredit] = useState(0)
   const [remaining, setRemaining] = useState(20)
 
-
   const handleAddToCarts = (card) => {
     const isExist = addCart.find((title) => title.id == card.id);
 
     let count = card.price;
     let creditCount = card.credit;
-    // let totalRemain = 20;
+
 
     if (isExist) {
-      return alert('already added the card')
+      return toast('You have already added the course name to the card')
     }
 
     else {
@@ -33,32 +33,23 @@ function App() {
         creditCount += title.credit
       });
       const totalCount = count;
-  
-      const totalCredit = creditCount;
-      
 
-    // remaining option
+      const totalCredit = creditCount;
+
+
+      // remaining option
       const totalRemaining = 20 - totalCredit;
-      if(totalCredit > 20){
-        alert('apnr somoi ses')
+      if (totalCredit > 20) {
+        toast('your time is up,  and your cant add more than 20 credit')
       }
-      else{
+      else {
         setRemaining(totalRemaining);
         setAddCart([...addCart, card]);
         setTotalCredit(totalCredit)
         setTotalCount(totalCount);
-
       }
     }
-
   };
-
-
-
-
-
-
-
 
   return (
     <>
@@ -67,6 +58,7 @@ function App() {
         <Cards handleAddToCarts={handleAddToCarts} ></Cards>
         <Carts addCart={addCart} totalCount={totalCount} totalCredit={totalCredit} remaining={remaining}></Carts>
       </div>
+      <ToastContainer />
     </>
   )
 }
