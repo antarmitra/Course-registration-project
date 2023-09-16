@@ -18,7 +18,7 @@ const Cards = ({handleAddToCarts}) => {
             <div className='flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                 {
                     cardData.map(card => <Card key={card.id} card={card} 
-                        handleAddToCarts = {handleAddToCarts} ></Card>)
+                        handleAddToCarts = {handleAddToCarts}></Card>)
                 }
 
             </div>
